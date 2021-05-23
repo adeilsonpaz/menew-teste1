@@ -16,12 +16,12 @@ $cadastro->setEstado($file['estado']);
 $cadastro->setCategoria($file['categoria']);
 $result =$cadastro->inserir();
 if ($result === true) {
-    header('location:..'.DIRECTORY_SEPARATOR.'index2.php?pag=message');
-    exit();
+  header('location:..'.DIRECTORY_SEPARATOR.'index2.php?pag=message');
+  exit();
 }
 if($sql == false) {
-    header('location:..'.DIRECTORY_SEPARATOR.'index2.php?pag=message02');
-    exit();
+  header('location:..'.DIRECTORY_SEPARATOR.'index2.php?pag=message02');
+  exit();
 }
 
 

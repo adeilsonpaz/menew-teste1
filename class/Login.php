@@ -19,7 +19,8 @@ class Login extends Base
         $login=self::bd()->prepare("SELECT nome, pass FROM login");
         $login->execute();
         $result=$login->fetchall();
-        foreach($result as $valor){       
+        foreach($result as $valor)
+        {       
             if($valor['nome'] == $this->getUsuario() && $valor['pass'] == $this->getSenha()){
                 return true;
                 exit();

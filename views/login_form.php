@@ -9,8 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>       
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>       
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>     
-        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>         
     </head>
     <body >
         <div class="container">
@@ -36,13 +35,13 @@
                         </div>                                                
                     </form>
                     <?php 
-                if (isset($_GET['pag']) == 'err') {
-                    print('<br><div class="alert alert-danger" role="alert"><strong>Erro de acesso!</strong> Verifique nome de usuario e senha!</div>');                    
-                    header('refresh:5; ./index.php');
-                } 
-                ?>
-                    </div>
-                    <div class="col-md-6 ">
+                        if (isset($_GET['pag']) == 'err') {
+                            print('<br><div class="alert alert-danger" role="alert"><strong>Erro de acesso!</strong> Verifique nome de usuario e senha!</div>');                    
+                            header('refresh:5; ./index.php');
+                        } 
+                    ?>
+                </div>
+                <div class="col-md-6 ">
                     <img src="views/image/menew.png" class="img-fluid" alt="Imagem responsiva">
                 </div>                
             </div>                

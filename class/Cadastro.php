@@ -51,8 +51,7 @@ class Cadastro extends Base
             exit();   
         }else {
             return false;
-        }  
-          
+        }            
     }    
     public function delete($id){
         $sql=self::bd()->prepare('DELETE FROM cadastro WHERE id_cadastro=?');
@@ -76,7 +75,7 @@ class Cadastro extends Base
         if($sql->execute()){
             return true;
             exit();
-         }else{
+        }else{
             return false;
             exit();
         }

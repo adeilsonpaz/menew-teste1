@@ -8,10 +8,8 @@
         if ($pag == 'lista') {
             header('location:../index2.php?pag=lista');
             exit();
-        }
-        
-    }
-    
+        }        
+    }    
 ?>
 <!DOCTYPE HTML>
 <html lang='pt-BR'>
@@ -49,7 +47,7 @@
             &nbsp; 
             <a class="text-warning" href="index2.php?pag=sair"> Sair <i class="bi bi-person-square"></i></a> 
         </nav>
- 
+    <!--container-->
 </htm>
 <?php
 session_start();
